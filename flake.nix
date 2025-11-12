@@ -33,6 +33,7 @@
         installPhase = ''
           mkdir -p $out/bin
           install -m755 OpenCB $out/bin/OpenCB
+          cp LICENSE.txt $out/bin/LICENSE.txt
         '';
 
         meta.mainProgram = "OpenCB";
